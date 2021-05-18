@@ -1,0 +1,474 @@
+
+@font-face {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 400;
+    src: 
+         url('../fonts/fraunces-v10-latin-regular.woff2') format('woff2'),
+         url('../fonts/fraunces-v10-latin-regular.woff') format('woff'); 
+  }
+  
+  @font-face {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    src: 
+         url('../fonts/fraunces-v10-latin-900.woff2') format('woff2'), 
+         url('../fonts/fraunces-v10-latin-900.woff') format('woff'); 
+  }
+
+  /* barlow-regular - latin */
+@font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    src: 
+         url('../fonts/barlow-v5-latin-regular.woff2') format('woff2'), 
+         url('../fonts/barlow-v5-latin-regular.woff') format('woff'); 
+  }
+  
+  @font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    src: 
+         url('../fonts/barlow-v5-latin-700.woff2') format('woff2'), 
+         url('../fonts/barlow-v5-latin-700.woff') format('woff'); 
+  }
+  
+  @font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 800;
+    src: 
+         url('../fonts/barlow-v5-latin-800.woff2') format('woff2'), 
+         url('../fonts/barlow-v5-latin-800.woff') format('woff'); 
+  }
+
+  *{
+      box-sizing: border-box;
+  }
+
+  body{
+      margin: 0%;
+      padding: 0%;
+      /* font-family: 'Barlow' 'calibri'; */
+      /* font-family: 'Fraunces' 'calibri'; */
+  }
+
+  .visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  .container{
+      width: 1280px;
+      margin: 0 auto;
+      padding: 0%;
+      padding-bottom: 80px;
+      
+  }
+
+
+  .container_small{
+      width: 1129px;
+      margin: 0 auto;
+      padding: 0px;
+     
+  }
+
+  .header_top{
+     
+
+      display: flex;
+      align-items: center;
+      padding-top: 45px;
+      padding-bottom: 45px;
+  }
+
+
+  .site_logo{
+      margin-right: auto;
+      text-decoration: none;
+      
+  }
+
+  .header_link{
+      margin-left: 30px;
+      
+      text-decoration: none;
+      font-family: 'Barlow';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      color: #83888F;
+
+  }
+
+  .header_bottom{
+      margin-bottom: 140px;
+      height: 600px;
+      background-image: url(../images/bacground-image-1.jpg);
+      background-repeat: no-repeat;
+      border-radius: 10px;
+  }
+
+  .header_bottom_box_info{
+      margin-top: 100px;
+      width: 493px;
+      height: 367px;
+      margin-left: 100px;
+
+  }
+
+  .header_bottom_heading{
+      margin: 0%;
+      margin-bottom: 40px;
+      width: 100%;
+    font-family: 'Fraunces 9pt';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    color: #FEFCF7;
+  }
+
+  .header_bottom_info{
+      margin: 0%;
+      margin-bottom: 60px;
+      width: 400px;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FEFCF7;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+
+ 
+.header_bottom_link{
+    
+    background: #0E8784;
+border-radius: 6px;
+padding: 12px 23px;
+    text-decoration: none;
+    font-family: 'Fraunces 9pt';
+font-style: normal;
+font-weight: 900;
+font-size: 18px;
+line-height: 25px;
+color: #FEFCF7;
+
+}
+
+/* =====================================================section collection==================================================== */
+
+
+.section_collection{
+    margin-bottom: 160px;
+    padding-top: 100px;
+    width: 1129px;
+    background-image: url(../images/bacground-our-collection.png);
+    background-repeat: no-repeat;
+    
+}
+
+
+.collection_list{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+    
+
+}
+
+.collection_list_item{
+    padding: 0px 10px;
+    width: 255px;
+    list-style: none;
+}
+
+.list_item_image{
+    margin-bottom: 64px;
+
+
+}
+
+.list_item_header{
+    margin-bottom: 24px;
+    font-family: Fraunces 9pt;
+font-style: normal;
+font-weight: 900;
+font-size: 24px;
+line-height: 32px;
+text-align: center;
+color: #333D4B;
+}
+
+.list_item_info{
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #333D4B;
+
+}
+
+/* ======================================section_choice================================================= */
+
+
+.section_choice{
+    margin-bottom: 350px;
+width: 1280px;
+height: 577px;
+padding-top: 100px;
+background-color: #2C343E;
+border-radius: 10px;
+}
+
+
+.section_choice_heading{
+    font-family: 'Fraunces 9pt';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+color: #FEFCF7;
+
+}
+
+
+.section-choice-info{
+    width: 540px;
+    margin: 0px auto;
+    margin-bottom: 40px;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+color: #FEFCF7;
+mix-blend-mode: normal;
+opacity: 0.8;
+}
+
+
+.section_choice-list{
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    list-style: none;
+}
+
+.choice_list_item{
+    margin: 15px;
+    padding: 48px;
+    width: 350px;
+    height: 382px;
+    background: #0E8784;
+border-radius: 8px;
+}
+
+.choice_list_item_image{
+    
+    margin-bottom: 55px;
+    margin-left: 92px;
+    margin-right: 92px;
+}
+
+.choice_list_item_link{
+    text-decoration: none;
+}
+
+.choice_list_item_heading{
+    font-family: 'Fraunces 9pt';
+font-style: normal;
+font-weight: 900;
+font-size: 24px;
+line-height: 32px;
+text-align: center;
+
+color: #FEFCF7;
+
+}
+
+
+.choice_list_item_info{
+    font-family: 'Barlow';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 26px;
+text-align: center;
+
+color: #FEFCF7;
+
+}
+
+
+/* ===================================HOW IT WORKS================================================================================ */
+
+
+.section_How_it_works_heading{
+    margin-bottom: 80px;
+    font-family: 'Fraunces 9pt';
+font-style: normal;
+font-weight: 900;
+font-size: 24px;
+line-height: 32px;
+color: #83888F;
+
+}
+
+.section_How_it_works_line_wrapper{
+    display: flex;
+    margin-bottom: 65px;
+    align-items: center;
+    
+}
+
+.section_How_it_works_line{
+    display: inline-block;
+    
+    width: 349px;
+    height: 1px;
+    border: 2px solid #FDD6BA;
+}
+
+.section_How_it_works_line_oval_2{
+    display: inline-block;
+width: 31px;
+height: 31px;
+background: #FEFCF7;
+border: 2px solid #0E8784;
+box-sizing: border-box;
+border-radius: 50%;
+
+
+}
+
+.how_it_works_list{
+    padding: 0px;
+    display: flex;
+   list-style: none;
+
+}
+
+.how_it_works_list_item{
+    margin-right: 95px;
+    width: 285px;
+    height: 335px;
+
+}
+
+.how_it-works_list_number{
+    margin: 0;
+    margin-bottom: 38px;
+    font-family: 'Fraunces 9pt';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    color: #FDD6BA;
+}
+
+.how_it_works_list_heading{
+    margin: 0;
+    margin-bottom: 42px;
+    width: 200px;
+    font-family: 'Fraunces 9pt';
+font-style: normal;
+font-weight: 900;
+font-size: 32px;
+line-height: 36px;
+color: #333D4B;
+}
+
+.hov_it_works_list_info{
+    margin: 0;
+    font-family: 'Barlow';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 26px;
+color: #333D4B;
+}
+
+
+.hov_it_works_link{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 120px;
+    margin-bottom: 80px;
+    padding: 12px 23px;
+    text-decoration: none;
+    font-family: Fraunces 9pt;
+font-style: normal;
+font-weight: 900;
+font-size: 18px;
+line-height: 25px;
+text-align: center;
+color: #FEFCF7;
+background: #0E8784;
+border-radius: 6px;
+
+}
+
+/* =======================================footer============================================== */
+
+
+.site_footer{
+     display: flex;
+    align-items: center;
+    padding: 0px 85px;
+    width: 1280px;
+    height: 120px;
+    background: #2C343E;
+}
+
+
+.site_footer-logo{
+    text-decoration: none;
+    
+    margin-right: 100px;
+
+}
+
+.site_footer_link{
+    margin-right: 30px;
+    text-decoration: none;
+    font-family: 'Barlow';
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+letter-spacing: 0.923077px;
+text-transform: uppercase;
+
+color: #83888F;
+}
+
+.messenjer-footer{
+    
+    margin-left: 24px;
+    text-decoration: none;  
+}
+
+.icon_facebook{
+    margin-left: auto;
+}
+
+
+
