@@ -82,7 +82,7 @@
      
   }
 
-  .header_top{
+  .site-header{
      
 
       display: flex;
@@ -98,7 +98,7 @@
       
   }
 
-  .header_link{
+  .header__nav-link{
       margin-left: 30px;
       
       text-decoration: none;
@@ -111,23 +111,25 @@
 
   }
 
-  .header_bottom{
+  .header__hero-section{
       margin-bottom: 140px;
-      height: 600px;
+      padding-top: 100px;
+      padding-bottom: 100px;
       background-image: url(../images/bacground-image-1.jpg);
       background-repeat: no-repeat;
       border-radius: 10px;
   }
 
-  .header_bottom_box_info{
-      margin-top: 100px;
+  .hero-section__info{
+     display: flex;
+     flex-direction: column;
+     
       width: 493px;
-      height: 367px;
       margin-left: 100px;
 
   }
 
-  .header_bottom_heading{
+  .hero-section__heading{
       margin: 0%;
       margin-bottom: 40px;
       width: 100%;
@@ -139,7 +141,7 @@
     color: #FEFCF7;
   }
 
-  .header_bottom_info{
+  .hero-section__discription{
       margin: 0%;
       margin-bottom: 60px;
       width: 400px;
@@ -154,11 +156,12 @@
   }
 
  
-.header_bottom_link{
-    
+.hero-section__link{
+    width: 217px;
     background: #0E8784;
 border-radius: 6px;
 padding: 12px 23px;
+text-align: center;
     text-decoration: none;
     font-family: 'Fraunces 9pt';
 font-style: normal;
@@ -169,10 +172,17 @@ color: #FEFCF7;
 
 }
 
-/* =====================================================section collection==================================================== */
+/* ============================================section collection==================================================== */
 
+.site-main{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
 
-.section_collection{
+/* ===================================================================================================================== */
+
+.section-collection{
     margin-bottom: 160px;
     padding-top: 100px;
     width: 1129px;
@@ -182,7 +192,7 @@ color: #FEFCF7;
 }
 
 
-.collection_list{
+.collection__list{
     display: flex;
     justify-content: space-around;
     padding-left: 0;
@@ -190,21 +200,21 @@ color: #FEFCF7;
 
 }
 
-.collection_list_item{
+.collection__list-item{
     padding: 0px 10px;
     width: 255px;
     list-style: none;
 }
 
-.list_item_image{
+.list-item__image{
     margin-bottom: 64px;
 
 
 }
 
-.list_item_header{
+.list-item__heading{
     margin-bottom: 24px;
-    font-family: Fraunces 9pt;
+    font-family: 'Fraunces 9pt';
 font-style: normal;
 font-weight: 900;
 font-size: 24px;
@@ -213,8 +223,8 @@ text-align: center;
 color: #333D4B;
 }
 
-.list_item_info{
-    font-family: Barlow;
+.list-item__discription{
+    font-family: 'Barlow';
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -227,7 +237,7 @@ color: #333D4B;
 /* ======================================section_choice================================================= */
 
 
-.section_choice{
+.section-choice{
     margin-bottom: 350px;
 width: 1280px;
 height: 577px;
@@ -237,7 +247,7 @@ border-radius: 10px;
 }
 
 
-.section_choice_heading{
+.section-choice__heading{
     font-family: 'Fraunces 9pt';
     font-style: normal;
     font-weight: 900;
@@ -249,7 +259,7 @@ color: #FEFCF7;
 }
 
 
-.section-choice-info{
+.section-choice__discription{
     width: 540px;
     margin: 0px auto;
     margin-bottom: 40px;
@@ -265,14 +275,14 @@ opacity: 0.8;
 }
 
 
-.section_choice-list{
+.section-choice__list{
     display: flex;
     justify-content: center;
     padding: 0px;
     list-style: none;
 }
 
-.choice_list_item{
+.section-choice__list-item{
     margin: 15px;
     padding: 48px;
     width: 350px;
@@ -281,18 +291,18 @@ opacity: 0.8;
 border-radius: 8px;
 }
 
-.choice_list_item_image{
+.section-choice__image{
     
     margin-bottom: 55px;
     margin-left: 92px;
     margin-right: 92px;
 }
 
-.choice_list_item_link{
+.section-choice__link{
     text-decoration: none;
 }
 
-.choice_list_item_heading{
+.section-choice__list-item__heading{
     font-family: 'Fraunces 9pt';
 font-style: normal;
 font-weight: 900;
@@ -305,7 +315,7 @@ color: #FEFCF7;
 }
 
 
-.choice_list_item_info{
+.section-choice__list-item__discription{
     font-family: 'Barlow';
 font-style: normal;
 font-weight: normal;
@@ -321,7 +331,7 @@ color: #FEFCF7;
 /* ===================================HOW IT WORKS================================================================================ */
 
 
-.section_How_it_works_heading{
+.section__How-it-works__heading{
     margin-bottom: 80px;
     font-family: 'Fraunces 9pt';
 font-style: normal;
@@ -332,14 +342,14 @@ color: #83888F;
 
 }
 
-.section_How_it_works_line_wrapper{
+.section-How-it-works__line-wrapper{
     display: flex;
     margin-bottom: 65px;
     align-items: center;
     
 }
 
-.section_How_it_works_line{
+.section-How-it-works__line{
     display: inline-block;
     
     width: 349px;
@@ -347,7 +357,7 @@ color: #83888F;
     border: 2px solid #FDD6BA;
 }
 
-.section_How_it_works_line_oval_2{
+.section-How-it-works__line-oval{
     display: inline-block;
 width: 31px;
 height: 31px;
@@ -359,21 +369,21 @@ border-radius: 50%;
 
 }
 
-.how_it_works_list{
+.how-it-works__list{
     padding: 0px;
     display: flex;
    list-style: none;
 
 }
 
-.how_it_works_list_item{
+.how-it-works__list-item{
     margin-right: 95px;
     width: 285px;
     height: 335px;
 
 }
 
-.how_it-works_list_number{
+.how-it-works__number{
     margin: 0;
     margin-bottom: 38px;
     font-family: 'Fraunces 9pt';
@@ -384,7 +394,7 @@ border-radius: 50%;
     color: #FDD6BA;
 }
 
-.how_it_works_list_heading{
+.how-it-works__heading{
     margin: 0;
     margin-bottom: 42px;
     width: 200px;
@@ -396,7 +406,7 @@ line-height: 36px;
 color: #333D4B;
 }
 
-.hov_it_works_list_info{
+.hov-it-works__discription{
     margin: 0;
     font-family: 'Barlow';
 font-style: normal;
@@ -407,7 +417,7 @@ color: #333D4B;
 }
 
 
-.hov_it_works_link{
+.hov-it-works__link{
     display: inline-block;
     margin-left: 20px;
     margin-top: 120px;
@@ -429,7 +439,7 @@ border-radius: 6px;
 /* =======================================footer============================================== */
 
 
-.site_footer{
+.site-footer{
      display: flex;
     align-items: center;
     padding: 0px 85px;
@@ -439,14 +449,14 @@ border-radius: 6px;
 }
 
 
-.site_footer-logo{
+.site-footer__logo{
     text-decoration: none;
     
     margin-right: 100px;
 
 }
 
-.site_footer_link{
+.site-footer__link{
     margin-right: 30px;
     text-decoration: none;
     font-family: 'Barlow';
@@ -460,7 +470,7 @@ text-transform: uppercase;
 color: #83888F;
 }
 
-.messenjer-footer{
+.site-footer__messenjer{
     
     margin-left: 24px;
     text-decoration: none;  
